@@ -1,3 +1,6 @@
+import random
+random.randint
+
 def hpcheck():
     playerhp = int(input("hp input "))
     if playerhp <= int(0):
@@ -6,17 +9,10 @@ def hpcheck():
         playerhp = 100
     print(playerhp)
 
-"""def mad_lib():
-    adjective = input("please enter a adjective ")
-    verb = input("please enter a verb ")
-    celeb = input("please enter a celebrity ")
-    number = input("please enter a number ")
-    verb2 = input("please enter a verb ")
-    print(f"It was normal {adjective} day as I watched someone {verb} with {celeb} for {number} days and then {verb2}")"""
 Adventurer_name = "Slab"
 retry = "Y"
 def endingscenedie():
-    print(f"{Adventurer_name} has finally died ")
+    print(f"{Adventurer_name} has unfortunatley died ")
     retry = input("Would you like to retry Y / N ")
     if retry == "N":
         exit()
@@ -28,4 +24,47 @@ def okending():
     retry = input("Would you like to retry Y / N ")
     if retry == "N":
         exit()
+
+
+
+
 hpcheck()
+
+enemyhp = 100
+
+while enemyhp > 0:
+    i
+
+""" """
+
+inventory = []
+def randomchest():
+    N = "N"
+    while N == "N":
+        Random = random.randint(1,9)
+        print(Random)
+        if Random == "1":
+            inventory.append("10* sword")
+        if Random == "2":
+            inventory.append("bow")
+        if Random == "3":
+            inventory.append("")            
+        if Random == "4":
+            inventory.append("")
+        if Random == "5":
+            inventory.append("")
+        if Random == "6":
+            inventory.append("")
+        if Random == "7":
+            inventory.append("")
+        if Random == "8":
+            inventory.append("")
+        if Random == "9":
+            inventory.append("")
+        print(inventory)
+randomchest()
+
+
+def clothheal():
+    playerhp +20 
+    print(playerhp)
