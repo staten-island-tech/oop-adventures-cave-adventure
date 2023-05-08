@@ -2,7 +2,7 @@ import random
 random.randint
 
 
-    inventory = []
+
 
 def randomchest():
     inventory = []
@@ -56,8 +56,8 @@ def randomchest():
                 return
             else:            
                 inventory.append("unknown")
-        print(inventory)
-        N = "U"
+            print(inventory)
+            N = "U"
     print(inventory)
 randomchest()
 

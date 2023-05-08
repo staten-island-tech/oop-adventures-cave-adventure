@@ -1,6 +1,6 @@
 import random
 random.randint
-
+"""
 def hpcheck():
     playerhp = int(input("hp input "))
     if playerhp <= int(0):
@@ -35,7 +35,7 @@ enemyhp = 100
 while enemyhp > 0:
     i
 
-""" """
+ """
 
 inventory = []
 def randomchest():
@@ -45,26 +45,23 @@ def randomchest():
         print(Random)
         if Random == "1":
             inventory.append("10* sword")
-        if Random == "2":
+        elif Random == "2":
             inventory.append("bow")
-        if Random == "3":
-            inventory.append("")            
-        if Random == "4":
+        elif Random == "3":
             inventory.append("")
-        if Random == "5":
+        elif Random == "4":
             inventory.append("")
-        if Random == "6":
+        elif Random == "5":
             inventory.append("")
-        if Random == "7":
+        elif Random == "6":
             inventory.append("")
-        if Random == "8":
+        elif Random == "7":
             inventory.append("")
-        if Random == "9":
+        elif Random == "8":
             inventory.append("")
+        elif Random == "9":
+            inventory.append("")
+        N = input("N for continue ")
         print(inventory)
 randomchest()
 
-
-def clothheal():
-    playerhp +20 
-    print(playerhp)
