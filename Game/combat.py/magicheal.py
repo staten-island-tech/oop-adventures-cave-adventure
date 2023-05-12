@@ -1,8 +1,12 @@
 
 def magicheal():
-    def endingscenedie ():
-        print("you died")
-    playerhp = int(input("hp input "))
+    def endingscenedie():
+        print("has unfortunatley died ")
+        print(inventory)
+    retry = input("Would you like to retry Y / N ")
+    if retry == "N":
+        exit()
+    playerhp = 100
     if playerhp <= int(0):
         endingscenedie()
     elif playerhp >= int(1):
@@ -13,5 +17,5 @@ def magicheal():
             print(eplayerhp)
         else:
             print(eplayerhp)
-magicheal()
+
 
