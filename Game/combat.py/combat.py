@@ -1,4 +1,4 @@
-#Combat
+""" #Combat
 from attack import attack
 from magicheal import magicheal
 from space import space
@@ -14,25 +14,11 @@ while turn == True:
         turn = False
     else:
         space()
-        turn = False
-
-""" #Fire Trap
-import random
-def endingscenedie():
-        print("has unfortunatley died ")
-        print(inventory)
-retry = input("Would you like to retry Y / N ")
-if retry == "N":
-    exit()
-n = random.randint(1,10)
-if n >= 10:
-    print("You avoided a dangerous trap and continue deeper into the dungeon")
-else:
-    endingscenedie()
-     """
+        turn = False """
 
 
-""" #Random Encouter
+
+#Random Encouter
 def enemy_check():
     import random
     n = random.randint(1,10)
@@ -41,11 +27,28 @@ def enemy_check():
         print("You stumbled upon a spider swarm")
         enemy_hp()
         combat()
-    elif n >= 7:
+    elif n == 7 or 8:
         enemy = "goblin"
         print("You encounter a goblin")
         enemy_hp()
         combat()
+    elif n == 6 or 5:
+        enemy = "bandit"
+        print("You have come across a bandit trying to steal your treasure")
+        enemy_hp()
+        combat()
+    elif n == 4 or 3:
+        enemy = "mimic"
+        print("You have happened upon a mimic, a creature who disguises itself as a chest and kills any who tries to open it")
+        enemy_hp()
+        combat()
+    elif n == 2 or 1:
+        enemy = "wanderer"
+        print("You come across a mysterious wanderer with malicious intent")
+        enemy_hp()
+        combat()
+enemy_check
+
 
 def enemy_hp():
     if enemy == "spider swarm":
@@ -62,7 +65,7 @@ def enemy_hp():
         enemyhp = 4820 
 
 enemies = []
-defeated_enemies = []  """
+defeated_enemies = []  
 
 """ def spiderattack():
     if turn == False:
