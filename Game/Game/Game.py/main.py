@@ -46,6 +46,9 @@ def puzzlemath():
   mathanswer = input("a. 420 b.42 c.69")
   if mathanswer == "42":
     roomid = 20
+    print("You obatin a flower crown")
+    flowercrown == "Yes"
+    inventory.append("flowercrown")
   else:
     endingscenedie()
 
@@ -57,5 +60,14 @@ def stumble():
   else:
     print("continue on smoothly")
 
-
-\
+def shrine():
+  print("You discover a room with a shrine with a pedestal")
+  question1 = input("Whould you like to place an item on the pedestal? Y/N ")
+  if question1 == "Y":
+    print(inventory)
+    while shrinechoice not in inventory:
+      shrinechoice = input("What item do you choose to go on the pedestal? ")
+    if shrinechoice == "flower crown":
+      print("You reveive a blessing.")
+    else:
+      endingscenedie()
