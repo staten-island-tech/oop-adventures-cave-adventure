@@ -35,8 +35,6 @@ def gamesplit():
 
 gamesplit()
 
-def secondsences():
-  if roomid == 1:
 
 
 
