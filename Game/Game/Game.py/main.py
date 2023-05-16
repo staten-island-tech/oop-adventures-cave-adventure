@@ -69,5 +69,6 @@ def shrine():
       shrinechoice = input("What item do you choose to go on the pedestal? ")
     if shrinechoice == "flower crown":
       print("You reveive a blessing.")
+      soda == "Yes"
     else:
       endingscenedie()
