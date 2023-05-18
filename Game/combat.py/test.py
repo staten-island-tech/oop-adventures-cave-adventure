@@ -61,12 +61,12 @@ while add_more_adventurers == "Y":
 
 weapons = []
 ailments = []
-inventory =[]
+inventory =["bandage"]
 
 def combat():
     import random
     import attack
-    n = 5
+    n = random.randint(5,5)
     while n == 5 :
         print("You stumbled upon a spider swarm, and they seem hungry")
         enemy = "spider"
@@ -88,9 +88,14 @@ def combat():
             retry = input("Would you like to retry Y / N ")
             if retry == "N":
                 exit()
+
         turn = True
         while turn == True:
-            playerhp = 100
+            playerhp = int(input("hp input "))
+            if playerhp <= int(0):
+                endingscenedie()
+            if playerhp >= int(100):
+                playerhp = 100
             move = input("What will you do? Attack, Utility, or Heal? ")
             if move == "Attack":
                 attack()
@@ -101,30 +106,40 @@ def combat():
                 elif playerhp >= int(1):
                     eplayerhp = playerhp + 20
                     if eplayerhp > 100:
-                        eplayerhp = ("You have " + 100 +" Hp")
+                        eplayerhp = 100
                         print(eplayerhp)
                         turn = False
+                        n = 0
+                        break
                     else:
                         print(eplayerhp)
                         turn = False
+                        n = 0
+                        break
             else:
                 print(inventory)
-                input_3 = ("What would you like to use?")
+                input_3 = input("What would you like to use? ")
                 if input_3.lower == "bandage":
-                    playerhp + 30
-                    print(playerhp)
+                    eplayerhp = playerhp + 30
+                    print(eplayerhp)
+                    turn = False
+                    break
                 elif input_3.lower == "health potion":
-                    playerhp + 60
-                    print(playerhp)
+                    eplayerhp = playerhp + 60
+                    print(eplayerhp)
+                    turn = False
+                    break
                 elif input_3.lower == "great health potion":
-                    playerhp + 90
-                    print(playerhp)
+                    eplayerhp = playerhp + 90
+                    print(eplayerhp)
+                    turn = False
+                    break
                 elif input_3.lower == "soda":
                     print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
                     ailments.append("soda")
-                else:
-                    endingscenedie()
-                turn = False
+                    turn = False
+                    break
+
     if n == 4:
         print("You encounter a goblin, a green imp-like creature with fangs")
         enemy = "goblin"
@@ -172,9 +187,7 @@ def combat():
                 elif input_3.lower == "soda":
                     print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
                     ailments.append("soda")
-                else:
-                    endingscenedie()
-                turn = False
+
     if n == 3 :
         print("You have come across a bandit trying to steal your treasure")
         enemy = "bandit"
@@ -222,9 +235,7 @@ def combat():
                 elif input_3.lower == "soda":
                     print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
                     ailments.append("soda")
-                else:
-                    endingscenedie()
-                turn = False
+
     if n == 2:
         print("You have happened upon a mimic, a creature who disguises itself as a chest and kills any who tries to open it")
         enemy = "mimic"
@@ -272,9 +283,7 @@ def combat():
                 elif input_3.lower == "soda":
                     print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
                     ailments.append("soda")
-                else:
-                    endingscenedie()
-                turn = False
+
     if n == 1 :
         print("You come across a mysterious wanderer with malicious intent")
         enemy = "wanderer"
@@ -322,7 +331,5 @@ def combat():
                 elif input_3.lower == "soda":
                     print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
                     ailments.append("soda")
-                else:
-                    endingscenedie()
-                turn = False
+
 combat()
