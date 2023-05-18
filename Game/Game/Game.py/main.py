@@ -70,3 +70,11 @@ def shrine():
       soda == "Yes"
     else:
       endingscenedie()
+
+def underwatercave():
+  print("you reach a cavern with a deep pool of water ")
+  ucavedecison = input("dive into the pool of water Y/N or leave")
+  if ucavedecison == "Y":
+    print("You dive under the surface of the water and swim into another cave.")
+  elif ucavedecison == "N":
+    endingscenewater()
