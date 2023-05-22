@@ -66,11 +66,6 @@ inventory =[]
 
 def combat():
     import random
-    from attack import spearattack
-    from attack import swordattack
-    from attack import magicattack
-    from attack import bikeattack
-    from attack import motorcycleattack
     n = random.randint(1,5)
     print(n)
     while n == 5 :
@@ -86,43 +81,63 @@ def combat():
             enemyhp = 75
         elif enemy == "wanderer":
             enemyhp = 150
-        else: 
-            enemyhp = 4820 
-            turn = True
-            while turn == True:
+        turn = True
+        while turn == True:
                 move = input("What will you do? Attack, Utility, or Heal? ")
                 if move == "Attack":
                     print(weapons)
                     weapon = input("Which weapon will you use")
                     if weapon.lower == "iron spear":
-                        spearattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 50
+                        else:
+                            enemyhp - 25
+                            if enemyhp <= 0:
+                                print("You have killed your enemy")
                     elif weapon.lower == "flame sword":
-                        swordattack()
+                        if "soda" in ailments.append:
+                             enemyhp - 60
+                        else:
+                            enemyhp - 30
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "sand magic":
-                        magicattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 80
+                        else:
+                            enemyhp - 40
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "throwable bike":
-                        bikeattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 140
+                        else:
+                            enemyhp - 70
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "throwable motorcycle":
-                        motorcycleattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 200
+                        else:
+                            enemyhp - 100
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     else:
                         print("YOU DON'T HAVE THAT")
                         still_turn = True
                         still_turn = turn
                     turn = False
                 elif move == "Heal":
-                    retry = input("Would you like to retry Y / N ")
-                    if retry.upper == "N":
-                        exit()
                     playerhp = 100
                     if playerhp <= int(0):
                         endingscenedie()
                     elif playerhp >= int(1):
                         eplayerhp = playerhp + 20
-                    if eplayerhp > 100:
-                        eplayerhp = 100 
-                        print(eplayerhp)
-                    else:
-                        print(eplayerhp)
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
+                        else:
+                            print(eplayerhp)
                     turn = False
                 else:
                     print(inventory)
@@ -161,43 +176,63 @@ def combat():
             enemyhp = 75
         elif enemy == "wanderer":
             enemyhp = 150
-        else: 
-            enemyhp = 4820 
-            turn = True
-            while turn == True:
+        turn = True
+        while turn == True:
                 move = input("What will you do? Attack, Utility, or Heal? ")
                 if move == "Attack":
                     print(weapons)
                     weapon = input("Which weapon will you use")
                     if weapon.lower == "iron spear":
-                        spearattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 50
+                        else:
+                            enemyhp - 25
+                            if enemyhp <= 0:
+                                print("You have killed your enemy")
                     elif weapon.lower == "flame sword":
-                        swordattack()
+                        if "soda" in ailments.append:
+                             enemyhp - 60
+                        else:
+                            enemyhp - 30
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "sand magic":
-                        magicattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 80
+                        else:
+                            enemyhp - 40
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "throwable bike":
-                        bikeattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 140
+                        else:
+                            enemyhp - 70
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "throwable motorcycle":
-                        motorcycleattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 200
+                        else:
+                            enemyhp - 100
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     else:
                         print("YOU DON'T HAVE THAT")
                         still_turn = True
                         still_turn = turn
                     turn = False
                 elif move == "Heal":
-                    retry = input("Would you like to retry Y / N ")
-                    if retry.upper == "N":
-                        exit()
                     playerhp = 100
                     if playerhp <= int(0):
                         endingscenedie()
                     elif playerhp >= int(1):
                         eplayerhp = playerhp + 20
-                    if eplayerhp > 100:
-                        eplayerhp = 100 
-                        print(eplayerhp)
-                    else:
-                        print(eplayerhp)
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
+                        else:
+                            print(eplayerhp)
                     turn = False
                 else:
                     print(inventory)
@@ -236,43 +271,63 @@ def combat():
             enemyhp = 75
         elif enemy == "wanderer":
             enemyhp = 150
-        else: 
-            enemyhp = 4820 
-            turn = True
-            while turn == True:
+        turn = True
+        while turn == True:
                 move = input("What will you do? Attack, Utility, or Heal? ")
                 if move == "Attack":
                     print(weapons)
                     weapon = input("Which weapon will you use")
                     if weapon.lower == "iron spear":
-                        spearattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 50
+                        else:
+                            enemyhp - 25
+                            if enemyhp <= 0:
+                                print("You have killed your enemy")
                     elif weapon.lower == "flame sword":
-                        swordattack()
+                        if "soda" in ailments.append:
+                             enemyhp - 60
+                        else:
+                            enemyhp - 30
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "sand magic":
-                        magicattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 80
+                        else:
+                            enemyhp - 40
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "throwable bike":
-                        bikeattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 140
+                        else:
+                            enemyhp - 70
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "throwable motorcycle":
-                        motorcycleattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 200
+                        else:
+                            enemyhp - 100
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     else:
                         print("YOU DON'T HAVE THAT")
                         still_turn = True
                         still_turn = turn
                     turn = False
                 elif move == "Heal":
-                    retry = input("Would you like to retry Y / N ")
-                    if retry.upper == "N":
-                        exit()
                     playerhp = 100
                     if playerhp <= int(0):
                         endingscenedie()
                     elif playerhp >= int(1):
                         eplayerhp = playerhp + 20
-                    if eplayerhp > 100:
-                        eplayerhp = 100 
-                        print(eplayerhp)
-                    else:
-                        print(eplayerhp)
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
+                        else:
+                            print(eplayerhp)
                     turn = False
                 else:
                     print(inventory)
@@ -311,43 +366,63 @@ def combat():
             enemyhp = 75
         elif enemy == "wanderer":
             enemyhp = 150
-        else: 
-            enemyhp = 4820 
-            turn = True
-            while turn == True:
+        turn = True
+        while turn == True:
                 move = input("What will you do? Attack, Utility, or Heal? ")
                 if move == "Attack":
                     print(weapons)
                     weapon = input("Which weapon will you use")
                     if weapon.lower == "iron spear":
-                        spearattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 50
+                        else:
+                            enemyhp - 25
+                            if enemyhp <= 0:
+                                print("You have killed your enemy")
                     elif weapon.lower == "flame sword":
-                        swordattack()
+                        if "soda" in ailments.append:
+                             enemyhp - 60
+                        else:
+                            enemyhp - 30
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "sand magic":
-                        magicattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 80
+                        else:
+                            enemyhp - 40
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "throwable bike":
-                        bikeattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 140
+                        else:
+                            enemyhp - 70
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "throwable motorcycle":
-                        motorcycleattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 200
+                        else:
+                            enemyhp - 100
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     else:
                         print("YOU DON'T HAVE THAT")
                         still_turn = True
                         still_turn = turn
                     turn = False
                 elif move == "Heal":
-                    retry = input("Would you like to retry Y / N ")
-                    if retry.upper == "N":
-                        exit()
                     playerhp = 100
                     if playerhp <= int(0):
                         endingscenedie()
                     elif playerhp >= int(1):
                         eplayerhp = playerhp + 20
-                    if eplayerhp > 100:
-                        eplayerhp = 100 
-                        print(eplayerhp)
-                    else:
-                        print(eplayerhp)
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
+                        else:
+                            print(eplayerhp)
                     turn = False
                 else:
                     print(inventory)
@@ -386,43 +461,64 @@ def combat():
             enemyhp = 75
         elif enemy == "wanderer":
             enemyhp = 150
-        else: 
-            enemyhp = 4820 
-            turn = True
-            while turn == True:
+        turn = True
+        while turn == True:
                 move = input("What will you do? Attack, Utility, or Heal? ")
                 if move == "Attack":
                     print(weapons)
                     weapon = input("Which weapon will you use")
                     if weapon.lower == "iron spear":
-                        spearattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 50
+                        else:
+                            enemyhp - 25
+                            if enemyhp <= 0:
+                                print("You have killed your enemy")
                     elif weapon.lower == "flame sword":
-                        swordattack()
+                        if "soda" in ailments.append:
+                             enemyhp - 60
+                        else:
+                            enemyhp - 30
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "sand magic":
-                        magicattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 80
+                        else:
+                            enemyhp - 40
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "throwable bike":
-                        bikeattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 140
+                        else:
+                            enemyhp - 70
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
                     elif weapon.lower == "throwable motorcycle":
-                        motorcycleattack()
+                        if "soda" in ailments.append:
+                            enemyhp - 200
+                        else:
+                            enemyhp - 100
+                            if enemyhp <= 0:
+                                print("You killed the enemy")
+
                     else:
                         print("YOU DON'T HAVE THAT")
                         still_turn = True
                         still_turn = turn
                     turn = False
                 elif move == "Heal":
-                    retry = input("Would you like to retry Y / N ")
-                    if retry.upper == "N":
-                        exit()
                     playerhp = 100
                     if playerhp <= int(0):
                         endingscenedie()
                     elif playerhp >= int(1):
                         eplayerhp = playerhp + 20
-                    if eplayerhp > 100:
-                        eplayerhp = 100 
-                        print(eplayerhp)
-                    else:
-                        print(eplayerhp)
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
+                        else:
+                            print(eplayerhp)
                     turn = False
                 else:
                     print(inventory)
@@ -448,3 +544,4 @@ def combat():
                             if retry == "N":
                                 exit()
                     turn = False
+combat()
