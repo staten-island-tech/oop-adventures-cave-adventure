@@ -63,7 +63,6 @@ while add_more_adventurers == "Y":
 weapons = []
 ailments = []
 inventory =[]
-
 def combat():
     import random
     from attack import spearattack
@@ -86,8 +85,6 @@ def combat():
             enemyhp = 75
         elif enemy == "wanderer":
             enemyhp = 150
-        else: 
-            enemyhp = 4820 
             turn = True
             while turn == True:
                 move = input("What will you do? Attack, Utility, or Heal? ")
@@ -161,8 +158,6 @@ def combat():
             enemyhp = 75
         elif enemy == "wanderer":
             enemyhp = 150
-        else: 
-            enemyhp = 4820 
             turn = True
             while turn == True:
                 move = input("What will you do? Attack, Utility, or Heal? ")
@@ -236,8 +231,6 @@ def combat():
             enemyhp = 75
         elif enemy == "wanderer":
             enemyhp = 150
-        else: 
-            enemyhp = 4820 
             turn = True
             while turn == True:
                 move = input("What will you do? Attack, Utility, or Heal? ")
@@ -311,8 +304,6 @@ def combat():
             enemyhp = 75
         elif enemy == "wanderer":
             enemyhp = 150
-        else: 
-            enemyhp = 4820 
             turn = True
             while turn == True:
                 move = input("What will you do? Attack, Utility, or Heal? ")
@@ -386,8 +377,6 @@ def combat():
             enemyhp = 75
         elif enemy == "wanderer":
             enemyhp = 150
-        else: 
-            enemyhp = 4820 
             turn = True
             while turn == True:
                 move = input("What will you do? Attack, Utility, or Heal? ")
