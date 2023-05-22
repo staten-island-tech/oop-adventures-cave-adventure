@@ -78,3 +78,12 @@ def underwatercave():
     print("You dive under the surface of the water and swim into another cave.")
   elif ucavedecison == "N":
     endingscenewater()
+
+def endingscenewater():
+  print("Reaching a large body of water underground you decide to leave")
+  exit()
+
+
+def endingrelic():
+  print("In a large decorated room seems to be an artifact floating in the center")
+  print("After retrieving the unknow artifact and escaping ")
