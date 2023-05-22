@@ -448,4 +448,3 @@ def combat():
                             if retry == "N":
                                 exit()
                     turn = False
-combat()
