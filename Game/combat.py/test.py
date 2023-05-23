@@ -1,4 +1,4 @@
-import uuid
+""" import uuid
 class Adventurer:
     def __init__(self, id, name, rank):
         self.id = id
@@ -99,7 +99,7 @@ def combat():
             move = input("What will you do? Attack, Utility, or Heal? ")
             if move == "Attack":
                 attack()
-                turn = False
+                n = 0
             elif move == "Heal":
                 if playerhp <= int(0):
                     endingscenedie()
@@ -108,12 +108,10 @@ def combat():
                     if eplayerhp > 100:
                         eplayerhp = 100
                         print(eplayerhp)
-                        turn = False
                         n = 0
                         break
                     else:
                         print(eplayerhp)
-                        turn = False
                         n = 0
                         break
             else:
@@ -122,22 +120,22 @@ def combat():
                 if input_3.lower == "bandage":
                     eplayerhp = playerhp + 30
                     print(eplayerhp)
-                    turn = False
+                    n = 0
                     break
                 elif input_3.lower == "health potion":
                     eplayerhp = playerhp + 60
                     print(eplayerhp)
-                    turn = False
+                    n = 0
                     break
                 elif input_3.lower == "great health potion":
                     eplayerhp = playerhp + 90
                     print(eplayerhp)
-                    turn = False
+                    n = 0
                     break
                 elif input_3.lower == "soda":
                     print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
                     ailments.append("soda")
-                    turn = False
+                    n = 0
                     break
 
     if n == 4:
@@ -160,7 +158,7 @@ def combat():
             move = input("What will you do? Attack, Utility, or Heal? ")
             if move == "Attack":
                 attack()
-                turn = False
+                n = 0
             elif move == "Heal":
                 if playerhp <= int(0):
                     endingscenedie()
@@ -171,22 +169,26 @@ def combat():
                     print(eplayerhp)
                 else:
                     print(eplayerhp)
-                turn = False
+                n = 0
             else:
                 print(inventory)
                 input_3 = ("What would you like to use?")
                 if input_3.lower == "bandage":
                     playerhp + 30
                     print(playerhp)
+                    n= 0
                 elif input_3.lower == "health potion":
                     playerhp + 60
                     print(playerhp)
+                    n=0
                 elif input_3.lower == "great health potion":
                     playerhp + 90
                     print(playerhp)
+                    n=0
                 elif input_3.lower == "soda":
                     print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
                     ailments.append("soda")
+                    n=0
 
     if n == 3 :
         print("You have come across a bandit trying to steal your treasure")
@@ -208,7 +210,7 @@ def combat():
             move = input("What will you do? Attack, Utility, or Heal? ")
             if move == "Attack":
                 attack()
-                turn = False
+                n=0
             elif move == "Heal":
                 if playerhp <= int(0):
                     endingscenedie()
@@ -219,22 +221,26 @@ def combat():
                     print(eplayerhp)
                 else:
                     print(eplayerhp)
-                turn = False
+                n=0
             else:
                 print(inventory)
                 input_3 = ("What would you like to use?")
                 if input_3.lower == "bandage":
                     playerhp + 30
                     print(playerhp)
+                    n=0
                 elif input_3.lower == "health potion":
                     playerhp + 60
                     print(playerhp)
+                    n=0
                 elif input_3.lower == "great health potion":
                     playerhp + 90
                     print(playerhp)
+                    n=0
                 elif input_3.lower == "soda":
                     print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
                     ailments.append("soda")
+                    n=0
 
     if n == 2:
         print("You have happened upon a mimic, a creature who disguises itself as a chest and kills any who tries to open it")
@@ -256,7 +262,7 @@ def combat():
             move = input("What will you do? Attack, Utility, or Heal? ")
             if move == "Attack":
                 attack()
-                turn = False
+                n=0
             elif move == "Heal":
                 if playerhp <= int(0):
                     endingscenedie()
@@ -267,22 +273,26 @@ def combat():
                     print(eplayerhp)
                 else:
                     print(eplayerhp)
-                turn = False
+                n=0
             else:
                 print(inventory)
                 input_3 = ("What would you like to use?")
                 if input_3.lower == "bandage":
                     playerhp + 30
                     print(playerhp)
+                    n=0
                 elif input_3.lower == "health potion":
                     playerhp + 60
                     print(playerhp)
+                    n=0
                 elif input_3.lower == "great health potion":
                     playerhp + 90
                     print(playerhp)
+                    n=0
                 elif input_3.lower == "soda":
                     print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
                     ailments.append("soda")
+                    n=0
 
     if n == 1 :
         print("You come across a mysterious wanderer with malicious intent")
@@ -304,7 +314,7 @@ def combat():
             move = input("What will you do? Attack, Utility, or Heal? ")
             if move == "Attack":
                 attack()
-                turn = False
+                n=0
             elif move == "Heal":
                 if playerhp <= int(0):
                     endingscenedie()
@@ -315,21 +325,45 @@ def combat():
                     print(eplayerhp)
                 else:
                     print(eplayerhp)
-                turn = False
+                n=0
             else:
                 print(inventory)
                 input_3 = ("What would you like to use?")
                 if input_3.lower == "bandage":
                     playerhp + 30
                     print(playerhp)
+                    n=0
                 elif input_3.lower == "health potion":
                     playerhp + 60
                     print(playerhp)
+                    n=0
                 elif input_3.lower == "great health potion":
                     playerhp + 90
                     print(playerhp)
+                    n=0
                 elif input_3.lower == "soda":
                     print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
                     ailments.append("soda")
+                    n=0
 
-combat()
+combat() """
+
+ailments = []
+inventory = ["bandage"]
+
+
+print(inventory)
+playerhp = 100
+input_3 = input("What would you like to use?")
+if input_3 == "bandage":
+    playerhp + 30
+    print(playerhp)
+elif input_3.lower == "health potion":
+    playerhp + 60
+    print(playerhp)
+elif input_3.lower == "great health potion":
+    playerhp + 90
+    print(playerhp)
+elif input_3.lower == "soda":
+    print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
+    ailments.append("soda")
