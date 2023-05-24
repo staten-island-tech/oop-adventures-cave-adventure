@@ -103,51 +103,33 @@ def combat():
                     print(weapons)
                     weapon = input("Which weapon will you use ")
                     if weapon == "iron_spear":
-                        if "soda" in ailments.append:
-                            enemyhp - 50
-                            print(enemyhp)
-                        else:
-                            enemyhp - 25
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 25
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You have killed your enemy")
                     elif weapon == "flame_sword":
-                        if "soda" in ailments.append:
-                             enemyhp - 60
-                             print(enemyhp)
-                        else:
-                            enemyhp - 30
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 30
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "sand_magic":
-                        if "soda" in ailments.append:
-                            enemyhp - 80
-                            print(enemyhp)
-                        else:
-                            enemyhp - 40
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 40
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "throwable_bike":
-                        if "soda" in ailments.append:
-                            enemyhp - 140
-                            print(enemyhp)
-                        else:
-                            enemyhp - 70
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 70
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "throwable_motorcycle":
-                        if "soda" in ailments.append:
-                            enemyhp - 200
-                        else:
-                            enemyhp - 100
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 100
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     turn = False
                 elif move == "Heal":
-                    playerhp = 100
+                    playerhp = 20
                     if playerhp <= int(0):
                         endingscenedie()
                     elif playerhp >= int(1):
@@ -161,31 +143,28 @@ def combat():
                 else:
                     playerhp = 100
                     print(inventory)
-                    input_3 = input("What would you like to use?")
+                    input_3 = input("What would you like to use? ")
                     if input_3 == "bandage":
-                        playerhp + 30
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 30
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
                             print(playerhp)
                     elif input_3 == "health potion":
-                        playerhp + 60
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 60
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
                             print(playerhp)
                     elif input_3 == "great health potion":
-                        playerhp + 90
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 90
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
-                            print(playerhp)
-                    elif input_3 == "soda":
-                        print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
-                        ailments.append("soda")
+                            print(eplayerhp)
                     else:
                         endingscenedie()
                     turn = False
@@ -209,90 +188,68 @@ def combat():
                     print(weapons)
                     weapon = input("Which weapon will you use ")
                     if weapon == "iron_spear":
-                        if "soda" in ailments.append:
-                            enemyhp - 50
-                            print(enemyhp)
-                        else:
-                            enemyhp - 25
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp =enemyhp - 25
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You have killed your enemy")
                     elif weapon == "flame_sword":
-                        if "soda" in ailments.append:
-                            enemyhp - 60
-                            print(enemyhp)
-                        else:
-                            enemyhp - 30
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 30
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "sand_magic":
-                        if "soda" in ailments.append:
-                            enemyhp - 80
-                            print(enemyhp)
-                        else:
-                            enemyhp - 40
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 40
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "throwable_bike":
-                        if "soda" in ailments.append:
-                            enemyhp - 140
-                            print(enemyhp)
-                        else:
-                            enemyhp - 70
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 70
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "throwable_motorcycle":
-                        if "soda" in ailments.append:
-                            enemyhp - 200
-                            print(enemyhp)
-                        else:
-                            enemyhp - 100
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 100
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     turn = False
                 elif move == "Heal":
-                    playerhp = 100
+                    playerhp = 20
                     if playerhp <= int(0):
                         endingscenedie()
                     elif playerhp >= int(1):
-                        playerhp = playerhp + 20
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 20
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
-                            print(playerhp)
+                            print(eplayerhp)
                     turn = False
                 else:
+                    playerhp = 100
                     print(inventory)
-                    input_3 = input("What would you like to use?")
+                    input_3 = input("What would you like to use? ")
                     if input_3 == "bandage":
-                        playerhp + 30
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 30
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
-                            print(playerhp)
+                            print(eplayerhp)
                     elif input_3 == "health potion":
-                        playerhp + 60
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 60
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
-                            print(playerhp)
+                            print(eplayerhp)
                     elif input_3 == "great health potion":
-                        playerhp + 90
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 90
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
-                            print(playerhp)
-                    elif input_3 == "soda":
-                        print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
-                        ailments.append("soda")
+                            print(eplayerhp)
                     else:
                         endingscenedie()
                     turn = False
@@ -316,91 +273,68 @@ def combat():
                     print(weapons)
                     weapon = input("Which weapon will you use ")
                     if weapon == "iron_spear":
-                        if "soda" in ailments.append:
-                            enemyhp - 50
-                            print(enemyhp)
-                        else:
-                            enemyhp - 25
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 25
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You have killed your enemy")
                     elif weapon == "flame_sword":
-                        if "soda" in ailments.append:
-                            enemyhp - 60
-                            print(enemyhp)
-                        else:
-                            enemyhp - 30
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 30
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "sand_magic":
-                        if "soda" in ailments.append:
-                            enemyhp - 80
-                            print(enemyhp)
-                        else:
-                            enemyhp - 40
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 40
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "throwable_bike":
-                        if "soda" in ailments.append:
-                            enemyhp - 140
-                            print(enemyhp)
-                        else:
-                            enemyhp - 70
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 70
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "throwable_motorcycle":
-                        if "soda" in ailments.append:
-                            enemyhp - 200
-                            print(enemyhp)
-                        else:
-                            enemyhp - 100
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 100
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     turn = False
                 elif move == "Heal":
-                    playerhp = 100
+                    playerhp = 20
                     if playerhp <= int(0):
                         endingscenedie()
                     elif playerhp >= int(1):
-                        playerhp = playerhp + 20
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 20
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
-                            print(playerhp)
+                            print(eplayerhp)
                     turn = False
                 else:
                     playerhp = 100
                     print(inventory)
-                    input_3 = input("What would you like to use?")
+                    input_3 = input("What would you like to use? ")
                     if input_3 == "bandage":
-                        playerhp + 30
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 30
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
-                            print(playerhp)
+                            print(eplayerhp)
                     elif input_3 == "health potion":
-                        playerhp + 60
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 60
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
-                            print(playerhp)
+                            print(eplayerhp)
                     elif input_3 == "great health potion":
-                        playerhp + 90
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 90
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
-                            print(playerhp)
-                    elif input_3 == "soda":
-                        print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
-                        ailments.append("soda")
+                            print(eplayerhp)
                     else:
                         endingscenedie()
                     turn = False
@@ -424,53 +358,33 @@ def combat():
                     print(weapons)
                     weapon = input("Which weapon will you use ")
                     if weapon == "iron_spear":
-                        if "soda" in ailments.append:
-                            enemyhp - 50
-                            print(enemyhp)
-                        else:
-                            enemyhp - 25
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 25
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You have killed your enemy")
                     elif weapon == "flame_sword":
-                        if "soda" in ailments.append:
-                             enemyhp - 60
-                             print(enemyhp)
-                        else:
-                            enemyhp - 30
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 30
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "sand_magic":
-                        if "soda" in ailments.append:
-                            enemyhp - 80
-                            print(enemyhp)
-                        else:
-                            enemyhp - 40
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 40
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "throwable_bike":
-                        if "soda" in ailments.append:
-                            enemyhp - 140
-                            print(enemyhp)
-                        else:
-                            enemyhp - 70
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 70
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "throwable_motorcycle":
-                        if "soda" in ailments.append:
-                            enemyhp - 200
-                            print(enemyhp)
-                        else:
-                            enemyhp - 100
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 100
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     turn = False
                 elif move == "Heal":
-                    playerhp = 100
+                    playerhp = 10
                     if playerhp <= int(0):
                         endingscenedie()
                     elif playerhp >= int(1):
@@ -482,32 +396,30 @@ def combat():
                             print(eplayerhp)
                     turn = False
                 else:
+                    playerhp = 100
                     print(inventory)
-                    input_3 = input("What would you like to use?")
+                    input_3 = input("What would you like to use? ")
                     if input_3 == "bandage":
-                        playerhp + 30
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 30
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
                             print(playerhp)
                     elif input_3 == "health potion":
-                        playerhp + 60
+                        eplayerhp = playerhp + 60
                         if playerhp > 100:
                             playerhp = 100 
                             print(playerhp)
                         else:
                             print(playerhp)
                     elif input_3 == "great health potion":
-                        playerhp + 90
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 90
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
-                            print(playerhp)
-                    elif input_3 == "soda":
-                        print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
-                        ailments.append("soda")
+                            print(eplayerhp)
                     else:
                         endingscenedie()
                     turn = False
@@ -531,53 +443,33 @@ def combat():
                     print(weapons)
                     weapon = input("Which weapon will you use ")
                     if weapon == "iron_spear":
-                        if "soda" in ailments.append:
-                            enemyhp - 50
-                            print(enemyhp)
-                        else:
-                            enemyhp - 25
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 25
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You have killed your enemy")
                     elif weapon == "flame_sword":
-                        if "soda" in ailments.append:
-                             enemyhp - 60
-                             print(enemyhp)
-                        else:
-                            enemyhp - 30
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 30
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "sand_magic":
-                        if "soda" in ailments.append:
-                            enemyhp - 80
-                            print(enemyhp)
-                        else:
-                            enemyhp - 40
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 40
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "throwable_bike":
-                        if "soda" in ailments.append:
-                            enemyhp - 140
-                            print(enemyhp)
-                        else:
-                            enemyhp - 70
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp = enemyhp - 70
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     elif weapon == "throwable_motorcycle":
-                        if "soda" in ailments.append:
-                            enemyhp - 200
-                            print(enemyhp)
-                        else:
-                            enemyhp - 100
-                            print(enemyhp)
-                            if enemyhp <= 0:
+                            lenemyhp=enemyhp - 100
+                            print(lenemyhp)
+                            if lenemyhp <= 0:
                                 print("You killed the enemy")
                     turn = False
                 elif move == "Heal":
-                    playerhp = 100
+                    playerhp = 10
                     if playerhp <= int(0):
                         endingscenedie()
                     elif playerhp >= int(1):
@@ -589,32 +481,30 @@ def combat():
                             print(eplayerhp)
                     turn = False
                 else:
+                    playerhp = 10
                     print(inventory)
-                    input_3 = input("What would you like to use?")
+                    input_3 = input("What would you like to use? ")
                     if input_3 == "bandage":
-                        playerhp + 30
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 30
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
-                            print(playerhp)
+                            print(eplayerhp)
                     elif input_3 == "health potion":
-                        playerhp + 60
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 60
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
-                            print(playerhp)
+                            print(eplayerhp)
                     elif input_3 == "great health potion":
-                        playerhp + 90
-                        if playerhp > 100:
-                            playerhp = 100 
-                            print(playerhp)
+                        eplayerhp = playerhp + 90
+                        if eplayerhp > 100:
+                            eplayerhp = 100 
+                            print(eplayerhp)
                         else:
-                            print(playerhp)
-                    elif input_3 == "soda":
-                        print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
-                        ailments.append("soda")
+                            print(eplayerhp)
                     else:
                         endingscenedie()
                     turn = False
