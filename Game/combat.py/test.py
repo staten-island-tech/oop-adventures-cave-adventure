@@ -348,22 +348,15 @@ def combat():
 
 combat() """
 
-ailments = []
-inventory = ["bandage"]
 
+def swap(a,b):
+    a = 10
+    b = 15
+    aswapped = b
+    print(aswapped)
+    bswapped = a
+    print(bswapped)
+swap(10, 15)
+    
 
-print(inventory)
-playerhp = 100
-input_3 = input("What would you like to use?")
-if input_3 == "bandage":
-    playerhp + 30
-    print(playerhp)
-elif input_3.lower == "health potion":
-    playerhp + 60
-    print(playerhp)
-elif input_3.lower == "great health potion":
-    playerhp + 90
-    print(playerhp)
-elif input_3.lower == "soda":
-    print("The sweet flavor of the soda rejuvenates your weary body. You feel a new wave of power.")
-    ailments.append("soda")
+       
