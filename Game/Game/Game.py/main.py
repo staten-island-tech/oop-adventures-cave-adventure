@@ -1,28 +1,21 @@
-import classes
+"""import classes
+from everything import Weapon"""
 
-""" def character_creation():
-    Adventurer_name = input("What is the name of your adventurer?")
-    print(f"One upon a time, "+ Adventurer_name +" stumbled upon a cave and goes in to explore it.")
-    print(f"Then, " + Adventurer_name + " came across 3 routes leading further down into the cave, but doesn't know which one to go down") """
-decision_1 = input("What routew should they go down? Dark, Eerie, or Lit")
+def introd():
+    print(f"There was once a great adventurer of great renown by the name of {Adventure_name} who explored the whole world")
+    print(f"One of many great stories told were of {Adventure_name} great adventures in the Dungeon of The Eldrich Flower god")
+    print(f"After {Adventure_name} set off from a nearby village he stumbled apoun an ononimous cavern")
+    print(f"After {Adventure_name} entered he found 3 pathways in a large lit room")
+introd()
+decision_1 = input("What route should they go down? Dark, Eerie, or Lit")
 roomid == "0"
 def Eerie():
-  print("")
+  print("what")
 
 
 def gamesplit():
   if decision_1 == "Dark":
     print("You reach a dimly lit room, and a chest can be seen on one side and a passage on the other.")
-  elif decision_1 == "Lit":
-    print("You step into a giant garden filled with flora.")
-    number_generator()
-    if n >= 6:
-      Garden_God()
-      while x == "Y":
-        Garden_God()
-    else: 
-       print("You carefully make your way through the garden and find a chest.")
-       randomchest()
   elif decision_1 == "Eerie":
     number_generator()
     if n >= 9:
@@ -33,7 +26,6 @@ def gamesplit():
       roomid == 1
       Eerie()
 
-gamesplit()
 
 
 
@@ -86,4 +78,10 @@ def endingscenewater():
 
 def endingrelic():
   print("In a large decorated room seems to be an artifact floating in the center")
+  print("After retrieving the unknown artifact and escaping ")
+  exit
+def endinggolden():
+  print("In a large decorated room seems to be an artifact floating in the center")
   print("After retrieving the unknow artifact and escaping ")
+  
+  
