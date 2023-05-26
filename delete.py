@@ -1,32 +1,29 @@
-def dmgfuni():
-    number_generator()
-    if n == "1":
-        print("Grevious wound")
-    if n == "2":
-        print("slight bonk")
-    if n == "3":
-        print("Tramatic experience")
-    if n == "4":
-        print("Heavy bleed")
-    if n == "5":
-        print("Large Bruise")
-    if n == "6":
-        print("Fractured arm")
-    if n == "7":
-        print("Fractured leg")
-    if n == "8":
-        print("small bruise")
-    if n == "9":
-        print("light flesh wound")
-    if n == "10":
-        print("A flesh wound")
 
-
-
+Adventure_name = "a"
 
 class monster_attack():
     def spider_attack():
-        print(f"spider bites {Adventure_name} for 40 damage inflicting a {dmgfuni}")
-        print()
+        print(f"spider bites {Adventure_name} for 40 damage")
+        playerhp - "40"
+    def bandit_attack():
+        print(f"bandit shanks {Adventure_name} for 30 damage")
+        playerhp - "30"
+    def wanderer_attack():
+        print(f"wanderer slashes {Adventure_name} for 45 damage")
+        playerhp - "45"
+    def mimic_attack():
+        print(f"mimic crushes {Adventure_name} for 80 damage")
+        playerhp - "80"
+    def goblin_attack():
+        print(f"goblin slashes {Adventure_name} for 20 damage")
+        playerhp - "20"
 
 
+def goblin_attack():
+    playerhp = 100
+    print(f"goblin slashes {Adventure_name} for 20 damage")
+    endp = playerhp - 20 
+    playerhp = endp
+    print(playerhp)
+
+goblin_attack()
