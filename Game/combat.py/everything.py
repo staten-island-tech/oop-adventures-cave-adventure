@@ -85,15 +85,18 @@ def combat():
     damage = player_attack
     n = random.randint(5,5)
     print(n)
-    while n == 5 :
+    if n == 5 :
         print("You stumbled upon a spider swarm, and they seem hungry")
         enemy = "spider"
         if enemy == "spider swarm":
             enemyhp = 125
+
         elif enemy == "goblin":
             enemyhp = 50 
+
         elif enemy == "bandit":
             enemyhp = 100
+
         elif enemy == "mimic":
             enemyhp = 75
         elif enemy == "wanderer":
