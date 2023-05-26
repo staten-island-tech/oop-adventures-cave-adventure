@@ -83,7 +83,7 @@ def combat():
     import random
     from attack import player_attack
     damage = player_attack
-    n = random.randint(5,5)
+    n = random.randint(1,5)
     print(n)
     if n == 5 :
         print("You stumbled upon a spider swarm, and they seem hungry")
@@ -178,30 +178,15 @@ def combat():
                     print(weapons)
                     weapon = input("Which weapon will you use ")
                     if weapon == "iron_spear":
-                            lenemyhp =enemyhp - 25
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You have killed your enemy")
+                            damage.spear_attack()
                     elif weapon == "flame_sword":
-                            lenemyhp = enemyhp - 30
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.sword_attack
                     elif weapon == "sand_magic":
-                            lenemyhp = enemyhp - 40
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.magic_attack
                     elif weapon == "throwable_bike":
-                            lenemyhp = enemyhp - 70
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.bike_attack
                     elif weapon == "throwable_motorcycle":
-                            lenemyhp = enemyhp - 100
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.motor_attack
                     turn = False
                 elif move == "Heal":
                     playerhp = 100
@@ -263,30 +248,15 @@ def combat():
                     print(weapons)
                     weapon = input("Which weapon will you use ")
                     if weapon == "iron_spear":
-                            lenemyhp = enemyhp - 25
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You have killed your enemy")
+                            damage.spear_attack
                     elif weapon == "flame_sword":
-                            lenemyhp = enemyhp - 30
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.sword_attack
                     elif weapon == "sand_magic":
-                            lenemyhp = enemyhp - 40
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.magic_attack
                     elif weapon == "throwable_bike":
-                            lenemyhp = enemyhp - 70
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.bike_attack
                     elif weapon == "throwable_motorcycle":
-                            lenemyhp = enemyhp - 100
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.motor_attack
                     turn = False
                 elif move == "Heal":
                     playerhp = 100
@@ -348,30 +318,15 @@ def combat():
                     print(weapons)
                     weapon = input("Which weapon will you use ")
                     if weapon == "iron_spear":
-                            lenemyhp = enemyhp - 25
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You have killed your enemy")
+                            damage.spear_attack
                     elif weapon == "flame_sword":
-                            lenemyhp = enemyhp - 30
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.sword_attack
                     elif weapon == "sand_magic":
-                            lenemyhp = enemyhp - 40
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.magic_attack
                     elif weapon == "throwable_bike":
-                            lenemyhp = enemyhp - 70
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.bike_attack
                     elif weapon == "throwable_motorcycle":
-                            lenemyhp = enemyhp - 100
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.motor_attack
                     turn = False
                 elif move == "Heal":
                     playerhp = 100
@@ -433,30 +388,15 @@ def combat():
                     print(weapons)
                     weapon = input("Which weapon will you use ")
                     if weapon == "iron_spear":
-                            lenemyhp = enemyhp - 25
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You have killed your enemy")
+                            damage.spear_attack
                     elif weapon == "flame_sword":
-                            lenemyhp = enemyhp - 30
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.sword_attack
                     elif weapon == "sand_magic":
-                            lenemyhp = enemyhp - 40
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.magic_attack
                     elif weapon == "throwable_bike":
-                            lenemyhp = enemyhp - 70
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.bike_attack
                     elif weapon == "throwable_motorcycle":
-                            lenemyhp=enemyhp - 100
-                            print(lenemyhp)
-                            if lenemyhp <= 0:
-                                print("You killed the enemy")
+                            damage.motor_attack
                     turn = False
                 elif move == "Heal":
                     playerhp = 100
