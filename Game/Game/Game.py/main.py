@@ -1,87 +1,75 @@
-"""import classes
-from everything import Weapon"""
+print("Once upon a time there was a small village named Giron, and they were a completely self-sufficient community that seldomly interacted with foreigners. However, one day a small mysterious dungeon appeared out of thin air and reeked havoc on the surrounding environment. The ground was infected with the miasma being emitted from the dungeon's opening, and monsters never seen before started coming out of the dungeon. The once peaceful village was turned into a deserted ghostown within 2 years of the formation of the dungeon. Now, the place has become a legend with only rumors of its existence being spread.")
+print("It is now up to you to vanquish the evil dungeoon, save the village, and maybe become rich while you're at it.")
+print(" ")
+import uuid
+class Adventurer:
+    def __init__(self, id, name, rank):
+        self.id = id
+        self.name = name
+        self.rank = rank
+class Warrior(Adventurer):
+    def __init__(self, id, name, rank, sword):
+        super().__init__(name, id, rank)
+        self.sword = sword
+    def __str__(self):
+        return f"{self.name}, {self.rank}, {self.sword}, {self.id}"
+class Mage(Adventurer):
+    def __init__(self, id, name, rank, magic):
+        super().__init__(name, id, rank)
+        self.magic = magic
+    def __str__(self):
+        return f"{self.name}, {self.rank}, {self.magic}, {self.id}"
+class Spearman(Adventurer):
+    def __init__(self, name, id, rank, spear):
+        super().__init__(name, id, rank)
+        self.spear = spear
+    def __str__(self):
+        return f"{self.name}, {self.rank}, {self.spear}, {self.id}"
+    
+def create_new_warrior(name, rank, sword):
+    id = str(uuid.uuid4())
+    new_warrior = Warrior(id, name, rank, sword)
+    print(new_warrior)
+def create_new_mage(name, rank, magic):
+    id = str(uuid.uuid4())
+    new_mage = Mage(id, name, rank, magic)
+    print(new_mage)
+def create_new_spearman(name, rank, spear):
+    id = str(uuid.uuid4())
+    new_spearman = Spearman(id, name, rank, spear)
+    print(new_spearman)
 
-def introd():
-    print(f"There was once a great adventurer of great renown by the name of {Adventure_name} who explored the whole world")
-    print(f"One of many great stories told were of {Adventure_name} great adventures in the Dungeon of The Eldrich Flower god")
-    print(f"After {Adventure_name} set off from a nearby village he stumbled apoun an ononimous cavern")
-    print(f"After {Adventure_name} entered he found 3 pathways in a large lit room")
-introd()
-decision_1 = input("What route should they go down? Dark, Eerie, or Lit")
-roomid == "0"
-def Eerie():
-  print("what")
+add_more_adventurers = "Y"
 
+while add_more_adventurers == "Y":
+    user_request = input("What type of adventurer do you want to add? Warrior/Mage/Spearman ")
+    if user_request == "Warrior":
+        name = input("What is their name? ")
+        rank = input("What is their rank? ")
+        sword = "Sword user"
+        create_new_warrior(name, rank, sword)
+        add_more_adventurers = "N"
+    if user_request == "Mage":
+        name = input("What is their name? ")
+        rank = input("What is their rank? ")
+        magic = "Magic user"
+        create_new_mage(name, rank, magic)
+        add_more_adventurers = "N"
+    if user_request == "Spearman":
+        name = input("What is their name? ")
+        rank = input("What is their rank? ")
+        spear = "Spear user"
+        create_new_spearman(name, rank, spear)
+        add_more_adventurers = "N"
 
-def gamesplit():
-  if decision_1 == "Dark":
-    print("You reach a dimly lit room, and a chest can be seen on one side and a passage on the other.")
-  elif decision_1 == "Eerie":
-    number_generator()
-    if n >= 9:
-      print("You get lost and end up wandering into a room full of flames and die")
-      endingscenedie()
-    else:
-      print("You navigate the cave end up in a dark room")
-      roomid == 1
-      Eerie()
+weapons = []
+ailments = []
+inventory =[]
 
+if user_request == "Spearman":
+    weapons.append("iron_spear")
+if user_request == "Mage":
+    weapons.append("sand_magic")
+if user_request == "Warrior":
+    weapons.append("flame_sword")
 
-
-
-
-def puzzlemath():
-  print("You enter a room with the a question engraved into the ground")
-  print("6 x 7 = ")
-  mathanswer = input("a. 420 b.42 c.69")
-  if mathanswer == "42":
-    roomid = 20
-    print("You obatin a flower crown")
-    flowercrown == "Yes"
-    inventory.append("flowercrown")
-  else:
-    endingscenedie()
-
-def stumble():
-  number_generator()
-  if n >=5:
-    print("you suffer head damage")
-    concus = "YEs"
-  else:
-    print("continue on smoothly")
-
-def shrine():
-  print("You discover a room with a shrine with a pedestal")
-  question1 = input("Whould you like to place an item on the pedestal? Y/N ")
-  if question1 == "Y":
-    print(inventory)
-    while shrinechoice not in inventory:
-      shrinechoice = input("What item do you choose to go on the pedestal? ")
-    if shrinechoice == "flower crown":
-      print("You reveive a blessing.")
-      soda == "Yes"
-    else:
-      endingscenedie()
-
-def underwatercave():
-  print("you reach a cavern with a deep pool of water ")
-  ucavedecison = input("dive into the pool of water Y/N or leave")
-  if ucavedecison == "Y":
-    print("You dive under the surface of the water and swim into another cave.")
-  elif ucavedecison == "N":
-    endingscenewater()
-
-def endingscenewater():
-  print("Reaching a large body of water underground you decide to leave")
-  exit()
-
-
-def endingrelic():
-  print("In a large decorated room seems to be an artifact floating in the center")
-  print("After retrieving the unknown artifact and escaping ")
-  exit
-def endinggolden():
-  print("In a large decorated room seems to be an artifact floating in the center")
-  print("After retrieving the unknow artifact and escaping ")
-  
-  
