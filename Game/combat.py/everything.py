@@ -1,6 +1,6 @@
 
 import uuid
-class Adventurer:
+"""class Adventurer:
     def __init__(self, id, name, rank):
         self.id = id
         self.name = name
@@ -58,25 +58,28 @@ while add_more_adventurers == "Y":
         rank = input("What is their rank? ")
         spear = "Spear user"
         create_new_spearman(name, rank, spear)
-        add_more_adventurers = "N"
+        add_more_adventurers = "N"""
 
 weapons = []
 ailments = []
 inventory =["bandage"]
 
-if user_request == "Spearman":
+"""if user_request == "Spearman":
     weapons.append("iron_spear")
 if user_request == "Mage":
     weapons.append("sand_magic")
 if user_request == "Warrior":
-    weapons.append("flame_sword")
+    weapons.append("flame_sword")"""
 
 def endingscenedie():
-                            print(f" {name} has unfortunatley died ")
-                            print(inventory)
-                            retry = input("Would you like to retry Y / N ")
-                            if retry == "N":
-                                exit()
+    print(f" {name} has unfortunatley died ")
+    print(inventory)
+    retry = input("Would you like to retry Y / N ")
+    if retry == "N":
+        exit()
+    else:
+         print("error")
+         exit()
 
 
 def combat():
