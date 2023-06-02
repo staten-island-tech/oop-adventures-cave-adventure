@@ -54,4 +54,18 @@ class player_attack():
         print(lenemyhp)
         if lenemyhp <= 0:
             print("You killed the enemy")
+playerhp = 100
+class enemy_attack():
+    def spider_attack():
+        eplayerhp = playerhp - 40
+        print(f"spider bites {name} for 40 damage")
+        playerhp = eplayerhp
         
+enemy_attack
+"""    def motor_attack():
+        lenemyhp = enemyhp - 100
+        print(lenemyhp)
+        if lenemyhp <= 0:
+            print("You killed the enemy")
+        
+"""
