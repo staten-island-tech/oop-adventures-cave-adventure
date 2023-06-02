@@ -3,55 +3,64 @@ import random
 class random_1:
   def randomchest():
     inventory = []
+    weapons = []
     Random = random.randint(1,10)
     if Random == "1":
-            if "flame_sword" in inventory:
+            if "flame_sword" in weapons:
                 return
             else:
-                inventory.append("flame_sword")
+                weapons.append("flame_sword")
+                print(weapons)
     if Random == "2":
-            print("nothing")
+            print("You got nothing")
     if Random == "3":
-            if "sand_magic" in inventory:
+            if "sand_magic" in weapons:
                 return
             else:
-                inventory.append("sand_magic")            
+                weapons.append("sand_magic")    
+                print(weapons)        
     if Random == "4":
-            if "throwable_bike" in inventory:
+            if "throwable_bike" in weapons:
                 return
             else:            
-                inventory.append("throwable_bike")
+                weapons.append("throwable_bike")
+                print(weapons)
     if Random == "5":
-            if "throwable_motorcycle" in inventory:
+            if "throwable_motorcycle" in weapons:
                 return
             else:            
-                inventory.append("throwable_motorcycle")
+                weapons.append("throwable_motorcycle")
+                print(weapons)
     if Random == "6":
             if "bandage" in inventory:
                 return
             else:            
                 inventory.append("bandage")
+                print(inventory)
     if Random == "7":
             if "health_potion" in inventory:
                 return
             else:            
                 inventory.append("health_potion")
+                print(inventory)
     if Random == "8":
             if "great_health_potion" in inventory:
                 return
             else:            
                 inventory.append("great_health_potion")
+                print(inventory)
     if Random == "9":
             if "coke" in inventory:
                 return
             else:            
                 inventory.append("coke")
+                print(inventory)
     if Random == "10":
             if inventory in "unknown":
                 return
             else:            
                 inventory.append("unknown")
-            print(inventory)
+                print(inventory)
   def random():
     def endingscenedie():
         retry = input("You have died. Would you like to retry? Y / N ")
