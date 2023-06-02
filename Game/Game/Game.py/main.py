@@ -1,5 +1,7 @@
 from app import random_1
 random = random_1
+from everything import attacking
+attacks = attacking
 print("Once upon a time there was a small village named Giron, and they were a completely self-sufficient community that seldomly interacted with foreigners. However, one day a small mysterious dungeon appeared out of thin air and reeked havoc on the surrounding environment. The ground was infected with the miasma being emitted from the dungeon's opening, and monsters never seen before started coming out of the dungeon. The once peaceful village was turned into a deserted ghostown within 2 years of the formation of the dungeon. Now, the place has become a legend with only rumors of its existence being spread.")
 print("It is now up to you to vanquish the evil dungeoon, save the village, and maybe become rich while you're at it.")
 print(" ")
@@ -88,4 +90,4 @@ if decision_1 == "Eerie":
     print("You wander around a random room trying to make your way through.")
     random.random()
 if decision_1 == "Lit":
-    print("hi")
+    attacks.combat()
