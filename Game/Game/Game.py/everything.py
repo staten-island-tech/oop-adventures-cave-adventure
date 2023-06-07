@@ -6,12 +6,42 @@ def endingscenedie():
         if retry.upper == "N":
             exit()
 
+import random
+n = random.randint(1,5)
+if n == 5 :
+        print("You stumbled upon a spider swarm, and they seem hungry")
+        enemy = "spider"
+if n == 4:
+        print("You encounter a goblin, a green imp-like creature with fangs")
+        enemy = "goblin"
+if n == 3 :
+        print("You have come across a bandit trying to steal your treasure")
+        enemy = "bandit"
+if n == 2:
+        print("You have happened upon a mimic, a creature who disguises itself as a chest and kills any who tries to open it")
+        enemy = "mimic"
+if n == 1 :
+        print("You come across a mysterious wanderer with malicious intent")
+        enemy = "wanderer"
+        
+if enemy == "spider swarm":
+        enemyhp = 125
+elif enemy == "goblin":
+        enemyhp = 50 
+elif enemy == "bandit":
+        enemyhp = 100
+elif enemy == "mimic":
+        enemyhp = 75
+elif enemy == "wanderer":
+        enemyhp = 150
+
+
+
 class attacking():
     def combat():
         playerhp = 100
         hits = []
-        from attack import player_attack
-        damage = player_attack
+        bhits = []
         turn = True
         while turn == True:
                 move = input("What will you do? Attack, Utility, or Heal (please respond with the format in the question)? ")
@@ -19,42 +49,239 @@ class attacking():
                     print(weapons)
                     weapon = input("Which weapon will you use ")
                     if weapon == "iron_spear":
-                            damage.spear_attack()
+                                if enemy == "spider swarm":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "goblin":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "bandit":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "mimic":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "wanderer":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
                     elif weapon == "flame_sword":
-                            damage.sword_attack()
+                                if enemy == "spider swarm":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "goblin":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "bandit":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "mimic":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "wanderer":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
                     elif weapon == "sand_magic":
-                            damage.magic_attack()
+                                if enemy == "spider swarm":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "goblin":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "bandit":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "mimic":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "wanderer":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
                     elif weapon == "throwable_bike":
-                            damage.bike_attack()
+                                if enemy == "spider swarm":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "goblin":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "bandit":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "mimic":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "wanderer":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
                     elif weapon == "throwable_motorcycle":
-                            damage.motor_attack()
-                    turn = False
+                                if enemy == "spider swarm":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "goblin":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "bandit":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "mimic":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                                elif enemy == "wanderer":
+                                    bhits.append("i")
+                                    for i in bhits:
+                                        lenemyhp = enemyhp - (25*len(bhits))
+                                    print (lenemyhp)
+                                    if lenemyhp <= 0:
+                                           print("You killed the enemy")
+                                           break
+                    else:
+                        print("You decided not to attack")
+                        break
                     print("You have been hit.")
                     hits.append("i")
                     for i in hits:
                         lplayerhp = playerhp - (30*len(hits))
                     print(lplayerhp)
-                    turn = True
+                    if lplayerhp < 0:
+                        endingscenedie()
+                    else:
+                        turn = True
 
                 elif move == "Heal":
+                    for i in hits:
+                        lplayerhp = playerhp - (30*len(hits))
                     if playerhp <= int(0):
                         endingscenedie()
                     elif playerhp >= int(1):
-                        eplayerhp = playerhp + 20
-                        if eplayerhp > 100:
-                            eplayerhp = 100 
-                            print(eplayerhp)
+                        lplayerhp = playerhp + 20
+                        if lplayerhp > 100:
+                            lplayerhp = 100 
+                            print(lplayerhp)
                         else:
-                            print(eplayerhp)
+                            print(lplayerhp)
                     turn = False
-                    print("You have been hit.")
-                    hits.append("i")
-                    for i in hits:
-                        lplayerhp = playerhp - (30*len(hits))
-                    print(lplayerhp)
-                    turn = True
                     
-                else:
+                    
+                elif move == "Utility":
                     print(inventory)
                     input_3 = input("What would you like to use? ")
                     if input_3 == "bandage":
@@ -87,6 +314,8 @@ class attacking():
                         lplayerhp = playerhp - (30*len(hits))
                     print(lplayerhp)
                     turn = True
+                else:
+                     turn = True
     
 
 
