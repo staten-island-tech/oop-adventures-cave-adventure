@@ -85,26 +85,36 @@ print("")
 print(f"{name} fights against hunger and dehydration in order to find the dungeon, and 2 weeks after their adventure started they find the opening to the dungeon.")
 print("")
 
-
-decision_1 = input(f"{name} comes across a fork in the dunegeon with 1 path being dark, 1 eerie, and 1 well lit. Which path should they go down? Dark? Eerie? Or Lit? ")
-if decision_1 == "Dark":
-    print("You feel the prickly sensation of thorns on your finger and the item turns out to be a flower crown. I wonder what it can be used for?...")
-    inventory_2.append("flower")
-    attacks.combat()
-if decision_1 == "Eerie":
-    print("You wander around a random room trying to make your way through.")
-    random.random()
-if decision_1 == "Lit":
-    attacks.combat()
+paths = True
+while paths == True:
+    decision_1 = input(f"{name} comes across a fork in the dunegeon with 1 path being dark, 1 eerie, and 1 well lit. Which path should they go down? Dark? Eerie? Or Lit? ")
+    if decision_1 == "Dark":
+        print("You feel the prickly sensation of thorns on your finger and the item turns out to be a flower crown. I wonder what it can be used for?...")
+        inventory_2.append("flower")
+        attacks.combat()
+        break
+    if decision_1 == "Eerie":
+        print("You wander around a random room trying to make your way through.")
+        random.random()
+        break
+    if decision_1 == "Lit":
+        attacks.combat()
+        break
+    else: 
+        paths = True
 
 attacks.combat()
 
-ending = input("Will you go deeper? Or will you try and go out of the cave? (Respond with Deeper or Escape)")
-if ending == "Deeper":
-    print(f"{name} decides to go deeper into the dungeon and ends up in a huge room with an altar in the middle. You feel a strong urge to place something upon the altar...")
-    print(inventory_2)
-    altar = input("What item shall you place upon the altar?")
-    if altar == "flower":
-        print(f"The wall facing {name} opens up and reveals huge piles of gold and mythical items, your name will forever go down in history as the one to clear The Dungeon. The End")
-if ending == "Escape":
-    print(f"The adventure of {name} has sadly come to an end without anyone knowing of what he achieved. Instead of wealth and fame they chose to save themself.")
+cave = True
+while cave == True:
+    ending = input("Will you go deeper? Or will you try and go out of the cave? (Respond with Deeper or Escape)")
+    if ending == "Deeper":
+        print(f"{name} decides to go deeper into the dungeon and ends up in a huge room with an altar in the middle. You feel a strong urge to place something upon the altar...")
+        print(inventory_2)
+        altar = input("What item shall you place upon the altar?")
+        if altar == "flower":
+            print(f"The wall facing {name} opens up and reveals huge piles of gold and mythical items, your name will forever go down in history as the one to clear The Dungeon. The End")
+    if ending == "Escape":
+        print(f"The adventure of {name} has sadly come to an end without anyone knowing of what he achieved. Instead of wealth and fame they chose to save themself.")
+    else:
+        cave = True
