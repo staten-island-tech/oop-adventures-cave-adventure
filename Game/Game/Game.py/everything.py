@@ -19,7 +19,7 @@ class attacking():
             print("You stumbled upon a spider swarm, and they seem hungry")
             enemy = "spider"
             if enemy == "spider swarm":
-                enemyhp = 125
+                enemyhp = 100
             elif enemy == "goblin":
                 enemyhp = 50 
             elif enemy == "bandit":
@@ -27,12 +27,12 @@ class attacking():
             elif enemy == "mimic":
                 enemyhp = 75
             elif enemy == "wanderer":
-                enemyhp = 150
+                enemyhp = 125
         if n == 4:
             print("You encounter a goblin, a green imp-like creature with fangs")
             enemy = "goblin"
             if enemy == "spider swarm":
-                enemyhp = 125
+                enemyhp = 100
             elif enemy == "goblin":
                 enemyhp = 50 
             elif enemy == "bandit":
@@ -40,12 +40,12 @@ class attacking():
             elif enemy == "mimic":
                 enemyhp = 75
             elif enemy == "wanderer":
-                enemyhp = 150
+                enemyhp = 125
         if n == 3 :
             print("You have come across a bandit trying to steal your treasure")
             enemy = "bandit"
             if enemy == "spider swarm":
-                enemyhp = 125
+                enemyhp = 100
             elif enemy == "goblin":
                 enemyhp = 50 
             elif enemy == "bandit":
@@ -53,12 +53,12 @@ class attacking():
             elif enemy == "mimic":
                 enemyhp = 75
             elif enemy == "wanderer":
-                enemyhp = 150
+                enemyhp = 125
         if n == 2:
             print("You have happened upon a mimic, a creature who disguises itself as a chest and kills any who tries to open it")
             enemy = "mimic"
             if enemy == "spider swarm":
-                enemyhp = 125
+                enemyhp = 100
             elif enemy == "goblin":
                 enemyhp = 50 
             elif enemy == "bandit":
@@ -66,12 +66,12 @@ class attacking():
             elif enemy == "mimic":
                 enemyhp = 75
             elif enemy == "wanderer":
-                enemyhp = 150
+                enemyhp = 125
         if n == 1 :
             print("You come across a mysterious wanderer with malicious intent")
             enemy = "wanderer"
             if enemy == "spider swarm":
-                enemyhp = 125
+                enemyhp = 100
             elif enemy == "goblin":
                 enemyhp = 50 
             elif enemy == "bandit":
@@ -79,7 +79,7 @@ class attacking():
             elif enemy == "mimic":
                 enemyhp = 75
             elif enemy == "wanderer":
-                enemyhp = 150
+                enemyhp = 125
         playerhp = 100
         hits = []
         bhits = []
@@ -95,6 +95,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -103,6 +112,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -111,6 +129,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -119,6 +146,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -127,6 +163,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -136,6 +181,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -144,6 +198,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -152,6 +215,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -160,6 +232,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -168,6 +249,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -177,6 +267,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -185,6 +284,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -193,6 +301,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -201,6 +318,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -209,6 +335,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -218,6 +353,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -226,6 +370,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -234,6 +387,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -242,6 +404,15 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
@@ -250,20 +421,20 @@ class attacking():
                                     for i in bhits:
                                         lenemyhp = enemyhp - (25*len(bhits))
                                     print (lenemyhp)
+                                    print("You have been hit.")
+                                    hits.append("i")
+                                    for i in hits:
+                                        lplayerhp = playerhp - (30*len(hits))
+                                    print(lplayerhp)
+                                    if lplayerhp < 0:
+                                        endingscenedie()
+                                    else:
+                                        turn = True
                                     if lenemyhp <= 0:
                                            print("You killed the enemy")
                                            turn = False
                     else:
                         print("You decided not to attack")
-                    print("You have been hit.")
-                    hits.append("i")
-                    for i in hits:
-                        lplayerhp = playerhp - (30*len(hits))
-                    print(lplayerhp)
-                    if lplayerhp < 0:
-                        endingscenedie()
-                    else:
-                        turn = True
 
                 elif move == "Heal":
                     for i in hits:
@@ -271,12 +442,13 @@ class attacking():
                     if playerhp <= int(0):
                         endingscenedie()
                     elif playerhp >= int(1):
-                        lplayerhp = playerhp + 20
-                        if lplayerhp > 100:
-                            lplayerhp = 100 
-                            print(lplayerhp)
+                        hits = []
+                        splayerhp = lplayerhp + 20
+                        if splayerhp > 100:
+                            splayerhp = 100 
+                            print(splayerhp)
                         else:
-                            print(lplayerhp)
+                            print(splayerhp)
                     turn = True
                     
                     
@@ -284,21 +456,24 @@ class attacking():
                     print(inventory)
                     input_3 = input("What would you like to use? ")
                     if input_3 == "bandage":
-                        eplayerhp = playerhp + 30
+                        eplayerhp = lplayerhp + 30
+                        hits = []
                         if eplayerhp > 100:
                             eplayerhp = 100 
                             print(eplayerhp)
                         else:
                             print(playerhp)
                     elif input_3 == "health_potion":
-                        eplayerhp = playerhp + 60
+                        eplayerhp = lplayerhp + 60
+                        hits = []
                         if eplayerhp > 100:
                             eplayerhp = 100 
                             print(eplayerhp)
                         else:
-                            print(playerhp)
+                            print(eplayerhp)
                     elif input_3 == "great_health_potion":
-                        eplayerhp = playerhp + 90
+                        eplayerhp = lplayerhp + 90
+                        hits = []
                         if eplayerhp > 100:
                             eplayerhp = 100 
                             print(eplayerhp)
