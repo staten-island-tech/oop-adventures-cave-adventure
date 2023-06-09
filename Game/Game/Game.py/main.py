@@ -2,6 +2,7 @@ from app import random_1
 random = random_1
 from everything import attacking
 attacks = attacking
+import random
 
 print("Once upon a time there was a small village named Giron, and they were a completely self-sufficient community that seldomly interacted with foreigners. However, one day a small mysterious dungeon appeared out of thin air and reeked havoc on the surrounding environment. The ground was infected with the miasma being emitted from the dungeon's opening, and monsters never seen before started coming out of the dungeon. The once peaceful village was turned into a deserted ghostown within 2 years of the formation of the dungeon. Now, the place has become a legend with only rumors of its existence being spread.")
 print("It is now up to you to vanquish the evil dungeoon, save the village, and maybe become rich while you're at it.")
@@ -114,7 +115,9 @@ while cave == True:
         altar = input("What item shall you place upon the altar?")
         if altar == "flower":
             print(f"The wall facing {name} opens up and reveals huge piles of gold and mythical items, your name will forever go down in history as the one to clear The Dungeon. The End")
+            break
     if ending == "Escape":
         print(f"The adventure of {name} has sadly come to an end without anyone knowing of what he achieved. Instead of wealth and fame they chose to save themself.")
+        break
     else:
         cave = True
